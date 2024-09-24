@@ -3,7 +3,7 @@ package org.example;
 public class SimpleCalculation {
     public static void main(String[] args){
 
-        int number1 = 3;
+        int number1 = 33;
         int number2 = 8;
         double sum1 = calc(number1, number2);
         double sub1 = sub(number1, number2);
