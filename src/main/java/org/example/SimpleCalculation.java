@@ -41,7 +41,7 @@ public class SimpleCalculation {
             return number * 2;
         }
     }
-
+fdsdfs
     public static double calc(int number1, int number2){
         return number1 + number2;
     }
