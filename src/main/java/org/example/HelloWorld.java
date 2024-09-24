@@ -3,7 +3,7 @@ package org.example;
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello Java!!!");
-        float x = 12;
+        float x = 13;
         float y = 7;
         float sum = x + y;
         System.out.println("Sum: " + sum );
