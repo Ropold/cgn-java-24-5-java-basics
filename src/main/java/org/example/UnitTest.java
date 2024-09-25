@@ -17,6 +17,7 @@ public class UnitTest {
     public static String upperCase(String a){
         return a.toUpperCase();
     }
+
     public static boolean isPositive(int a){
         return a > 0;
     }
