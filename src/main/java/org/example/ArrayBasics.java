@@ -11,7 +11,7 @@ public class ArrayBasics {
 
         int result1 = 0;
         for (int i : myNum) {
-            result1 = result1 + i;
+            result1 += i;
         };
         System.out.println("result1 = " + result1);
 
