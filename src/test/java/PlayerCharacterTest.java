@@ -36,5 +36,41 @@ public class PlayerCharacterTest {
         assertEquals(1,actual);
 
     }
+    @Test
+    public void move_Test_whenD_Xequals1(){
+        //given
+        String input = "D";
+
+        //when
+        int actual = PlayerCharacter.move(input);
+
+        //then
+        assertEquals(1,actual);
+    }
+    @Test
+    public void move_Test_whenA_XequalsMinus1(){
+        //given
+        String input = "A";
+
+        //when
+        int actual = PlayerCharacter.move(input);
+
+        //then
+        assertEquals(-1,actual);
+    }
+
+    @Test
+    public void move_Test_whenS_YequalsMinus1(){
+        //given
+        String input = "S";
+
+        //when
+        int actual = PlayerCharacter.move(input);
+
+        //then
+        assertEquals(-1,actual);
+    }
+
+
 }
 
