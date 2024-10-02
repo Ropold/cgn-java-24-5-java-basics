@@ -25,10 +25,10 @@ public class CarOop {
 
     public void speedAccelerates(){
         System.out.println("Speed now 100 km/h");
-        this.speed = 100;
+        speed = 100;
     }
     public void startEngine() {
         System.out.println("Start engine");
-        this.engine = true;
+        engine = true;
     }
 }

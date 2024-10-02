@@ -9,7 +9,7 @@ public class Main {
 
         System.out.println("Auto am Anfang: " + MaleksAudi.engine);
         MaleksAudi.startEngine();
-        System.out.println(MaleksAudi.engine);
+        System.out.println("Auto läuft: " + MaleksAudi.engine);
         MaleksAudi.speedAccelerates();
 
     }
