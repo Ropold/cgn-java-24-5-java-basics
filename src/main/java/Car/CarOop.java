@@ -19,6 +19,7 @@ public class CarOop {
         this.color = color;
         this.engine = engine;
         this.year = year;
+        this.speed = speed;
 
     }
 
