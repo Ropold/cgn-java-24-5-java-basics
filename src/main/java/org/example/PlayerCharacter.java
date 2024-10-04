@@ -1,3 +1,5 @@
+package org.example;
+
 public class PlayerCharacter {
     static int x = 0;
     static int y = 0;
