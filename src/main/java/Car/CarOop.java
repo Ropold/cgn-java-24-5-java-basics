@@ -31,4 +31,17 @@ public class CarOop {
         System.out.println("Start engine");
         engine = true;
     }
+
+    @Override
+    public String toString() {
+        return "CarOop{" +
+                "startEngine=" + startEngine +
+                ", brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", engine=" + engine +
+                ", year=" + year +
+                ", speed=" + speed +
+                '}';
+    }
 }
