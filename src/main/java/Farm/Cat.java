@@ -14,8 +14,10 @@ public class Cat extends Animal{
 
     @Override
     public void makeSound() {
+        super.makeSound();
         System.out.println(name + " says: Meow!");
     }
+
 
     public void purr() {
         System.out.println(name + " is purring.");
@@ -50,10 +52,10 @@ public class Cat extends Animal{
         return "Cat{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", breed='" + breed + '\'' +
-                ", color='" + color + '\'' +
-                ", isIndoor=" + isIndoor +
                 ", weight=" + weight +
+                ", color='" + color + '\'' +
+                ", breed='" + breed + '\'' +
+                ", isIndoor=" + isIndoor +
                 '}';
     }
 }
