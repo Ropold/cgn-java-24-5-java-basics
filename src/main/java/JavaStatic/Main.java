@@ -7,12 +7,12 @@ public class Main {
 
         System.out.println("count1 am Anfang: " + count1);
         count1.incrementInstanceCount();
-        count1.incrementTotalCount();
+        Counter.incrementTotalCount();
         System.out.println("count1 nach increment: " + count1);
 
         System.out.println("count2 am Anfang: " + count2);
         count2.incrementInstanceCount();
-        count2.incrementTotalCount();
+        count2.incrementTotalCount(); //antipattern
         System.out.println("count2 nach increment: " + count2);
 
 
