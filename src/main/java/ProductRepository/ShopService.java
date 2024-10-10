@@ -17,6 +17,7 @@ public class ShopService {
     public Order placeOrder(List<Integer> productsIds) {
         int orderId = orderRepo.getAllOrders().size() + 1;
         Map<Integer, Product> orderProducts = new HashMap<>();
+        double totalAmount = 0.0;
         boolean allProductsAvailable = true;
 
         for (Integer productId : productsIds) {
@@ -30,6 +31,7 @@ public class ShopService {
                 allProductsAvailable = false;
             } else {
                 orderProducts.put(productId, product);
+                totalAmount += product.price();
             }
         }
 
@@ -37,7 +39,7 @@ public class ShopService {
             return null;
         }
 
-        Order orderNew = new Order(orderId, orderProducts, 100.00);
+        Order orderNew = new Order(orderId, orderProducts,totalAmount);
         orderRepo.addOrder(orderNew);
         return orderNew;
     }
