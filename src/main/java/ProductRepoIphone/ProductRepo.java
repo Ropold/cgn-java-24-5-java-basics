@@ -1,22 +1,23 @@
 package ProductRepoIphone;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class ProductRepo {
-    private List<Product> products;
+    private List<Product> products = new ArrayList<>();
 
     public List<Product> getProducts() {
         return products;
     }
 
-    public Product getProductById(int id){
-        for(Product product : products){
-            if(product.id()==id){
-                return product;
+    public Optional<Product> getProductById(int id) {
+        for (Product product : products) {
+            if (product.id() == id) {
+                return Optional.of(product);
             }
         }
-        System.out.println("no such id exist");
-        return null;
+        return Optional.empty();
     }
 
     public Product addProduct(Product newProduct){
@@ -25,12 +26,18 @@ public class ProductRepo {
     }
 
     public void removeProduct(int id){
-        for(Product product : products){
+        for (Product product : products) {
             if(product.id()==id){
                 products.remove(product);
             }
         }
-        System.out.println("cant remove, id not exist");
+        System.out.println("not found");
     }
 
+    @Override
+    public String toString() {
+        return "ProductRepo{" +
+                "products=" + products +
+                '}';
+    }
 }

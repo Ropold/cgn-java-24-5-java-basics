@@ -8,7 +8,10 @@ public class Main {
         StringOperations.reverseString(a);
         StringOperations.palindrome(a);
 
+        StringOperations name = new StringOperations();
 
+        name.reverseString2(a);
+        name.reverseString3(a);
 
     }
 

@@ -6,23 +6,23 @@ public class StringOperations {
     }
 
 
-//    public String reverseString3(String str) {
-//        String returnstring = "";
-//        for (int i = str.length()-1; i >= 0; i-- ) {
-//            returnstring += str.charAt(i);
-//        }
-//        System.out.println(returnstring);
-//        return returnstring;
-//    }
-//
-//    public void reverseString2(String str) {
-//        String returnstring = "";
-//        for (int i = str.length()-1; i >= 0; i-- ) {
-//            returnstring += str.charAt(i);
-//        }
-//        System.out.println(returnstring);
-//        return;
-//    }
+    public String reverseString3(String str) {
+        String returnstring = "";
+        for (int i = str.length()-1; i >= 0; i-- ) {
+            returnstring += str.charAt(i);
+        }
+        System.out.println(returnstring);
+        return returnstring;
+    }
+
+    public void reverseString2(String str) {
+        String returnstring = "";
+        for (int i = str.length()-1; i >= 0; i-- ) {
+            returnstring += str.charAt(i);
+        }
+        System.out.println(returnstring);
+        return;
+    }
 
     public static void reverseString(String str) {
         String returnstring = "";
