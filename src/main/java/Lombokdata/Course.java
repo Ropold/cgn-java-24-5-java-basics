@@ -5,8 +5,8 @@ import lombok.Data;
 @AllArgsConstructor
 @Data
 public class Course {
-    int id;
-    String name;
-    Teacher teacher;
-    Student student;
+    private int id;
+    private String name;
+    private Teacher teacher;
+    private Student student;
 }
